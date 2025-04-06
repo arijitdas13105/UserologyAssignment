@@ -3,10 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { use } from "react";
-import useCrypto from "@/app/Hooks/useCrypto";
+// import useCrypto from "@/app/Hooks/useCrypto";
+import useCrypto from "../../../../Hooks/useCrypto";
 import dynamic from "next/dynamic";
 
- const PriceChart = dynamic(() => import("@/app/components/crypto/PriceChart"), {
+//  const PriceChart = dynamic(() => import("@/app/components/crypto/PriceChart"), {
+ const PriceChart = dynamic(() => import("../../../../../app/components/Crypto/PriceChart"), {
   ssr: false,
 });
 

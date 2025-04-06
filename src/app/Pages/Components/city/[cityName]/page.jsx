@@ -4,7 +4,9 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { use } from "react";
-import useWeather from "@/app/Hooks/useWeather";
+// import useWeather from "@/app/Hooks/useWeather";
+import useWeather from "../../../../Hooks/useWeather";
+
 import {
   setCurrentWeather,
   setHistoricalData,
